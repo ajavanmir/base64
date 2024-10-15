@@ -1,0 +1,39 @@
+<!--
+Copyright amir javanmir
+Released on: Oct 10, 2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 File</title>
+    <link href="./files/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="photos mb-3">
+            <ul>
+                <li><img src="./files/img/1.jpg" class="baseto64" /></li>
+                <li><img src="./files/img/2.jpg" class="baseto64" /></li>
+                <li><img src="./files/img/3.jpg" class="baseto64" /></li>
+                <li>
+                    <picture>
+                        <source srcset="./files/img/2.jpg" media="(max-width:575px)" />
+                        <source srcset="./files/img/3.jpg" media="(max-width:767px)" />
+                        <img src="./files/img/1.jpg" class="baseto64" />
+                    </picture>
+                </li>
+            </ul>
+        </div>        
+        <div class="videos">
+            <ul>
+                <li><video src="./files/video/SampleVideo.ia.mp4" controls class="baseto64-video"></video></li>
+                <li><video src="./files/video/SampleVideo.ia.mp4" controls class="baseto64-video"></video></li>
+                <li><video src="./files/video/SampleVideo.ia.mp4" controls class="baseto64-video"></video></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./files/js/file.js"></script>
+</body>
+</html>
